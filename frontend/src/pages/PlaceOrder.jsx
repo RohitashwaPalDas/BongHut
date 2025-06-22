@@ -51,7 +51,6 @@ const PlaceOrder = () => {
     setFormData((data) => ({ ...data, [name]: value }));
   };
 
-  const rzp_key = "wz5EE243aNQqv0zrRlVDFE8C";
 
   const initPay = async (order) => {
     const options = {
