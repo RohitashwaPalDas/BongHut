@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center py-5 bg-custom-grey border-b-3 border-black">
-      <img src={assets.logo} className="w-48" alt="" />
+      <img src={assets.logo} className="w-36 sm:w-48" alt="" />
       {location.pathname === "/place-order" && <NavLink to="/collection">Continue Browsing</NavLink>}
       {location.pathname !== "/place-order" && <ul className="hidden sm:flex gap-5 text-gray-700 text-lg font-bold ">
         <NavLink to="/" className="flex flex-col items-center">
@@ -42,13 +42,13 @@ const Navbar = () => {
         </NavLink>
       </ul>}
 
-      {location.pathname !== "/place-order" &&  <div className="flex gap-6 items-center">
+      {location.pathname !== "/place-order" &&  <div className="flex gap-3 sm:gap-6 items-center">
         <lord-icon
           src="https://cdn.lordicon.com/hoetzosy.json"
           trigger="hover"
           style={{ width: "2.2rem", height: "2.2rem" }}
-          className="cursor-pointer"
-          onClick={()=>{setShowSearch(true)}}
+          className="cursor-pointer w-2"
+          onClick={()=>{setShowSearch(true); navigate('/collection')}}
         ></lord-icon>
 
         <div className="group relative z-50">

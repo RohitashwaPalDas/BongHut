@@ -68,7 +68,7 @@ const Collection = () => {
   },[sortType])
 
   return (
-    <div className="flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t">
+    <div className="flex flex-col sm:flex-row gap-1 sm:gap-10 pt-2 sm:pt-10 border-t">
       {/* Left Side  */}
       <div className="min-w-60">
         <p
@@ -130,7 +130,7 @@ const Collection = () => {
       <div className="flex-1">
         <div className="flex justify-between text-base sm:text-2xl mb-4">
           <Title text1="ALL" text2="COLLECTIONS" />
-          <select onChange={(e)=>{setSortType(e.target.value)}} className="border-2 border-gray-300 text-sm px-2">
+          <select onChange={(e)=>{setSortType(e.target.value)}} className="border-2 border-gray-300 text-sm p-1 sm:p-2 ">
             <option value="relavant">Sort By: Relavant</option>
             <option value="low-high">Sort By: Low to High</option>
             <option value="high-low">Sort By: High to Low</option>

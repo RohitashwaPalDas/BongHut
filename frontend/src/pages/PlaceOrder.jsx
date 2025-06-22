@@ -136,7 +136,7 @@ const PlaceOrder = () => {
             { headers: { token } }
           );
           console.log(res.data);
-          if (success) {
+          if (res.data.success) {
             toast.success("Order placed successfully!");
             setCartItem({});
             updateIsProductBuy(false);
