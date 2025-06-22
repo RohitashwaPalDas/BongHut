@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Outfit:wght@100..900&family=Prata&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Outfit;
+}
+
+html, body {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+select, input, textarea{
+  border: 1px solif #c3c3c3;
+  outline-color: #c586a5;
+  border-radius: 4px;
+}
+
+.active {
+  background-color: rgba(128, 128, 128, 0.164);
+  border-color: black;
+}
+
